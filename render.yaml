@@ -1,0 +1,11 @@
+services:
+    - type: web
+      name: space
+      runtime: node
+      plan: free
+      branch: main
+      buildCommand: pnpm i
+      startCommand: pnpm start
+      envVars:
+          - key: NODE_VERSION
+            value: 20.18.0
